@@ -20,9 +20,7 @@ class ReverseBasedOnLastDigit{
         System.out.println("Enter numbers separated by spaces:");
         String input = scanner.nextLine();
         String[] inputStrings = input.trim().split("\\s+");
-
         sort(inputStrings);
-
         System.out.println("Sorted based on last digit:");
         for(int i = 0; i < inputStrings.length; i++){
             System.out.print(inputStrings[i] + " ");

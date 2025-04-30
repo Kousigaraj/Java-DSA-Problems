@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class Count {
-    void countVowelsAndConsonants(String str){
+public class CountVowelsConsonants {
+    public static void countVowelsAndConsonants(String str){
         int vowel = 0;
         int consonant = 0;
 
@@ -21,15 +21,11 @@ class Count {
         }
 
         System.out.println("Vowels: " + vowel + ", Consonants: " + consonant);
-    } 
-}
-
-public class CountVowelsConsonants {
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
-        Count obj = new Count();
-        obj.countVowelsAndConsonants(str);
+        countVowelsAndConsonants(str);
     }
 }
